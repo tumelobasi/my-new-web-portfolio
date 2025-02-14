@@ -5,135 +5,254 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website - Tumelo Maphalla</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/c974b490bc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c974b490bc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/Screenshot 2025-02-11 213834.png" alt="My logo" class="logo">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-            </nav>
-            <div class="header-text">
-                <p>SQA Intern</p>
-                <h1>Hi, I'm <span>Tumelo Maphalla</span> <br>From South Africa</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img
+            src="images/Screenshot 2025-02-11 213834.png"
+            alt="My logo"
+            class="logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>SQA Intern</p>
+          <h1>Hi, I'm <span>Tumelo Maphalla</span> <br />From South Africa</h1>
         </div>
+      </div>
     </div>
     <!-------------------About Section------------------->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/IMG-20240211-WA0017.jpg" alt="My Picture">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        🎯 Driven Software Tester | Computer Science & Statistics Graduate | ISTQB Certified
-
-As a passionate Software Tester intern with a foundation in Computer Science and Statistics, I thrive on ensuring that software systems are robust, reliable, and user-friendly. With an ISTQB Foundation certification, I am equipped with proven techniques to identify and resolve potential defects, contributing to seamless user experiences.
-
-💡 Core Strengths:
-
-Crafting and executing comprehensive test cases for functional, regression, and exploratory testing
-Leveraging data-driven insights from my statistics background to optimise testing strategies
-Adept in defect tracking tools such as JIRA and agile testing methodologies
-Strong problem-solving skills with a knack for finding edge cases
-I take pride in collaborating with cross-functional teams, delivering quality software, and maintaining efficient communication to ensure smooth project completion. I am eager to contribute my skills to a dynamic team and grow as a professional in the software testing field.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Testing Web/App interfaces</li>
-                            <li><span>Web Services</span><br>Web Testing & API Testing</li>
-                            <li><span>App Development</span><br>Mobile Testing</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2024 - Current</span><br>SQA Engineer Intern at iLab</li>
-                            <li><span>2022 - 2023</span><br>Student Assistant & Tutor at NWU</li>
-                            <li><span>2022 - 2023</span><br>Deputy Chaiperson of the Acedemic Stdent Chapters for the FNAS Faculty at NWU</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2024 - Current</span><br>ISTQB Training at iLab</li>
-                            <li><span>2023 - 2024</span><br>Web Development at freecodecamp.com</li>
-                            <li><span>2021 - 2023</span><br>Studen at the NWU (North-West University) </li>
-                            <li><span>2016 - 2020</span><br>Learner at ED Mashabane High School</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/IMG-20240211-WA0017.jpg" alt="My Picture" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              🎯 Driven Software Tester | Computer Science & Statistics Graduate
+              | ISTQB Certified As a passionate Software Tester intern with a
+              foundation in Computer Science and Statistics, I thrive on
+              ensuring that software systems are robust, reliable, and
+              user-friendly. With an ISTQB Foundation certification, I am
+              equipped with proven techniques to identify and resolve potential
+              defects, contributing to seamless user experiences. 💡 Core
+              Strengths: Crafting and executing comprehensive test cases for
+              functional, regression, and exploratory testing Leveraging
+              data-driven insights from my statistics background to optimise
+              testing strategies Adept in defect tracking tools such as JIRA and
+              agile testing methodologies Strong problem-solving skills with a
+              knack for finding edge cases I take pride in collaborating with
+              cross-functional teams, delivering quality software, and
+              maintaining efficient communication to ensure smooth project
+              completion. I am eager to contribute my skills to a dynamic team
+              and grow as a professional in the software testing field.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Testing Web/App interfaces</li>
+                <li>
+                  <span>Web Services</span><br />Web Testing & API Testing
+                </li>
+                <li><span>App Development</span><br />Mobile Testing</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024 - Current</span><br />SQA Engineer Intern at iLab
+                </li>
+                <li>
+                  <span>2022 - 2023</span><br />Student Assistant & Tutor at NWU
+                </li>
+                <li>
+                  <span>2022 - 2023</span><br />Deputy Chaiperson of the
+                  Acedemic Stdent Chapters for the FNAS Faculty at NWU
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024 - Current</span><br />ISTQB Training at iLab</li>
+                <li>
+                  <span>2023 - 2024</span><br />Web Development at
+                  freecodecamp.com
+                </li>
+                <li>
+                  <span>2021 - 2023</span><br />Studen at the NWU (North-West
+                  University)
+                </li>
+                <li>
+                  <span>2016 - 2020</span><br />Learner at ED Mashabane High
+                  School
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!----------------------Services Section------------------->
     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-brands fa-web-awesome"></i>
-                    <h2>Test Case Development</h2>
-                    <p>Assist in creating, updating, and executing test cases based on software requirements and design specifications.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-terminal"></i>
-                    <h2>Manual Testing</h2>
-                    <p>Perform manual testing of software applications to identify bugs, inconsistencies, and usability issues.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-square-web-awesome-stroke"></i>
-                    <h2>Automation Testing</h2>
-                    <p>Learn and assist in developing automated test scripts using tools like Selenium, Cypress, or Appium.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-web-awesome"></i>
+            <h2>Test Case Development</h2>
+            <p>
+              Assist in creating, updating, and executing test cases based on
+              software requirements and design specifications.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-terminal"></i>
+            <h2>Manual Testing</h2>
+            <p>
+              Perform manual testing of software applications to identify bugs,
+              inconsistencies, and usability issues.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-square-web-awesome-stroke"></i>
+            <h2>Automation Testing</h2>
+            <p>
+              Learn and assist in developing automated test scripts using tools
+              like Selenium, Cypress, or Appium.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
+      </div>
     </div>
     <!----------------------Portfolio Section------------------->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="My work images/bar_plot.png" alt="My Work 1">
-                </div>
-                <div class="work">
-                    <img src="My work images/line_plot.png" alt="My Work 2">
-                </div>
-                <div class="work">
-                    <img src="My work images/heatmap.png" alt="My Work 3">
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="My work images/pokemon.jpg" alt="My Work 1" />
+            <div class="layer">
+              <h3>Pokemon Search App</h3>
+              <p>
+                The Pokemon Search App is a responsive web application built
+                using HTML, CSS, and JavaScript. It allows users to search for
+                their favorite Pokemon and view detailed information, including
+                images, types, abilities, and base stats.
+              </p>
+              <a href="https://tumelobasi.github.io/Pokemon-app/"
+                ><i class="fa-solid fa-calculator"></i
+              ></a>
             </div>
+          </div>
+          <div class="work">
+            <img src="My work images/calculator.jpg" alt="My Work 2" />
+            <div class="layer">
+              <h3>Calculator App</h3>
+              <p>
+                The Calculator App is a sleek, user-friendly, and efficient tool
+                designed to simplify everyday calculations. Built with a clean
+                and intuitive interface, this app ensures a seamless experience
+                for users, whether they're performing basic arithmetic or more
+                complex computations.
+              </p>
+              <a href="https://codepen.io/tumelobasi/pen/bGywXGQ"
+                ><i class="fa-solid fa-calculator"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="My work images/Quote.jpg" alt="My Work 3" />
+            <div class="layer">
+              <h3>Quote Generator</h3>
+              <p>
+                The Quote Generator App is a dynamic web application designed to
+                inspire users with random quotes from various categories such as
+                motivation, life, success, and humor. Built with HTML, CSS, and
+                JavaScript, this app allows users to generate new quotes with a
+                simple click of a button.
+              </p>
+              <a href="https://tumelobasi.github.io/Random-Quote-Generator/"
+                ><i class="fa-solid fa-calculator"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <a href="#" class="btn">See more</a>
+      </div>
     </div>
-    <script>
-        var tablinks = document.getElementsByClassName('tab-links');
-        var tabcontents = document.getElementsByClassName('tab-contents');
-        function opentab(tabname){
-            for(i=0; i<tablinks.length; i++){
-                tablinks[i].classList.remove('active-link');
-            }
-            for(i=0; i<tabcontents.length; i++){
-                tabcontents[i].classList.remove('active-tab');
-            }
-            document.getElementById(tabname).classList.add('active-tab');
-            event.currentTarget.classList.add('active-link');
-        }
-    </script>
+    <!----------------------Contact Section------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i> tumelobasi@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 0788493610</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <!--<a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>-->
+            </div>
+            <a
+              href="images/Tumelo Maphalla Resume.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input name="email" type="email" placeholder="Email" required />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Send Message</button>
+            </form>
+            <span id="msg" class="success"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © 2025 Tumelo <i class="fa-solid fa-microchip"></i>. All
+          rights reserved.
+        </p>
+      </div>
+    </div>
+    <source />
+    <script src="script.js"></script>
   </body>
 </html>
